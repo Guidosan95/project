@@ -1,0 +1,16 @@
+
+
+Utilizar la tipografía Montserrat desde Google Fonts en su variable de weight 700 y 400.
+El h1 y el h2 utilizarán la variante 700.
+El h1 tendrá un tamaño de 40px, mientras que el h2 de 12px.
+El h2 anidará un mail de correo electrónico.
+Para tomar el color del h2 utilizar la aplicación Colorcop o una similar. color es #76D5FF
+Las imágenes tendrán un ancho de 50px y un alto en automático.
+
+Plan de referencia
+Panel
+Mandanos un mail
+¡Te damos la bienvenida a GymApp!
+Disfrutá de tu pase anual con descuento.
+Plan personalizado
+Acomodá tus tiempos

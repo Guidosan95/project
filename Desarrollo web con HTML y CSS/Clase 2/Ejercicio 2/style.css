@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: roboto;
+
+}
+nav h1{
+    font-family: coiny;
+    font: weight 400px;;
+}
+nav h1 strong{
+    font-family: coiny;
+}
+nav ul{
+    text-align: right;
+    list-style: none;
+}
+header div.social section#socia{
+    width: 348px;
+}
+
+header div.social section#socia h1 strong{
+    font-family: coiny
+}
+
+header div.social h2{
+    background-color: yellow;
+    font-size: 17px;
+}
+section#imag img{
+    width: 300px;
+    height: auto;
+}
+main div section{
+    width: 348px;
+}
+main div section h2{
+    background-color: yellow;
+}main div section img{
+    width: 300px;
+}
+main div section#servicios p{
+    font-weight: bold;
+    font-size: 25px;
+}
+ul li.item{
+    background-color: yellow;
+}
+li.item{
+    font-weight: bold;
+}
+aside{
+    text-align: center;
+}
+aside a img{
+    width: 50px;
+    margin-right: 10%;
+}
+footer{
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+}

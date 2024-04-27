@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: roboto;
+
+}
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+main{
+    width: 90%;
+    margin: auto;
+    
+}
+h1{
+    font-weight: bold;
+    font-size: 50px;
+    color: #0a2ff1;
+    margin-left: 10px;
+}
+h3{
+    color:#0a2ff1;
+    font-size: 25px;
+    font-weight: bold;
+}
+p#main{
+    font-size: 25px;
+    color: #000000;
+}
+p#link{
+    font-size: 20px;
+}
+div{
+    margin-left: 50px;
+    margin-right: 200px;
+}
+img.img-princp{
+    width: 100%;
+    height: auto;
+    
+}
+div.imag img{
+    width: 100%;
+
+}
+section div#link{
+    margin-bottom: 40px;
+}
+button{
+    background-color: #0a2ff1;
+    padding-bottom: 10px;
+    padding-top: 10px ;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border: none;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+hr{
+    width: 100%;
+    border: 2px solid #15163d;
+    margin-bottom: 5px;
+}

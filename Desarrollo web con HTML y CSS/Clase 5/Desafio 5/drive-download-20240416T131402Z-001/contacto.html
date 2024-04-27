@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <nav id="nav-bar">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.79 53"><defs><style>.cls-1{fill:#04146c;}</style></defs><title>M5-logo-azul</title><polygon class="cls-1" points="93.23 0 87.21 19.56 73.31 19.56 80.69 0 64.87 0 53.45 36.13 49.64 25.3 58.6 0 45.24 0 40.31 16.35 35.46 0 22.1 0 30.9 25.3 27.25 36.13 15.75 0 0 0 20 53 32.62 53 40.31 34.04 48.07 53 60.69 53 68.52 32.25 83.58 32.25 77.3 53 92.79 53 107.79 0 93.23 0"/></svg></section>
+       <ul>
+               <li><a href="index.html"><strong>Home</strong></a></li>
+               <li><a href="#">Contacto</a></li>
+       </ul>
+               
+   </nav>
+   <main>
+    <div>
+        <section>
+            <p><strong>¿Queres que nos contactemos con vos ?</strong></p>
+            <p>Dejanos tu consulta:</p>
+        </section>
+        <section id="form">
+            <form action="codigo.php" method="post">
+                <label><strong>Nombre completo</strong> <span>*</span></label>
+                    <input type="text" name="name" id="" required>
+
+                <label><strong>Email </strong><span>*</span></label>
+                    <input type="text" name="email" id="" required>
+
+                <label><strong>Mensaje </strong><span>*</span></label>
+                    <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+
+                <button type="reset" class="reset">
+                    Resetear
+                </button>
+                <button type="submit" class="send">
+                    Enviar
+                </button>
+            </form>
+        </section>
+    </div>
+        
+        
+   </main>
+</body>
+</html>

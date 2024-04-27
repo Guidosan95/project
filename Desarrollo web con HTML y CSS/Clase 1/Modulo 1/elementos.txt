@@ -1,0 +1,271 @@
+- el elemento <b> solo hace que el texto se vea en negrita, en cambio <strong> aparece en el motor de busqueda
+
+- <em> lo que hace es poner el texto en cursiva y el elemento <i> tambien, pero no tiene valor semantico en el buscador
+
+- <ol> y dentro de esta, se coloca <li> lo que crea una lista ordenada(son listas que inician con un numero)
+
+- en cambio <ul> se utiliza para listas desordenadas (solo son puntos).
+
+- <br> es un salto de linea. Es como si fuera un punto y aparte, pero no se utiliza para separar un parrafo y otro parrafo.
+
+- etiquetas de bloque ocupan todo ancho de su contenedor. ej: Body es "padre" de h1, h2, h3, etc.
+
+- etiquetas de linea simplemente exite en su entorno y no se extiende a todo el ancho de la pagina.
+
+- <hr> genera un divisor entre etiquetas
+
+- el header puede anidar cualquier tipo introductorio
+
+- main la prate principal, donde el contenido mas importante debe estar, no es aconsejable reutilizarlo
+
+- section es un elemento que no puede interpretarse si no podemos visualizar el resto de la interfaz. Dentro del section se encuentra los divs. El section sirve para maquetar.
+
+- article es un elemento que puedo redistribuirlo de manera independiente 
+
+- nav ( donde esta la barra de navegacion) dentro del header. se puede encontrar anidado en una "section". 
+
+- aside donde se colocan las publicidades, 
+
+- div se utiliza para maquetar
+
+- <a href=""></a> (el valor de href el es del destino al que nos va a llevar. En el medio de ambas <a> se coloca el nombre del destino.) Vinculo absolutos, son los que nos dirigen fuera del proyecto. Vinculos relativos, son aquellos vinculos que nos dirigen dentro de nuestro proyecto
+
+- target y title: target: Lo que nos permite hacer es indicar donde va a abrir, si en la misma pestaña o ventana o no. (valor: "_blank" nos abre en otra pestaña. El valor: "_self" abre el link en la misma pestaña o venta.)
+
+- Para Trabajar con Anclas. Lo que debemos hacer es colocar, por ej: En una lista, un <a href="#(y el nombre asignado)"></a>. En la informacion, anidamos colocando otro <a> pero en este caso en vez de usar href, utilizamos un id. Y de la misma manera anterior, colocamos el mismo nombre pero sin el #.
+
+-Vinculo de correo electronico. Dentro de un parrafo colocamos un <a> con un href="(y el mail)". ej. <a href="mailto:guidosan95@outlook.com"
+
+- El "mailto", se utiliza para enviar un mail a una persona al seleccionarlo.  Cuando se selecciona, se abre la app de correo y en el To: ya aparece el mail correspondiente.
+
+- Para insertar una imagen, se debe hacer de la siguiente manera <img src="el archivo o donde se encuentra la imagen"alt="descripcion de la imagen">
+
+- Para realizar un mapeado de las imagenes, se debe utilizar en la etiqueta <img> la etiqueta <map> para definir las zonas o regiones y cada zona se define por medio de la etiqueta <area>. Para colocar el ancho y alto, utilizaremos las propiedades de "widht" y "height"
+
+- Tambien se puede anidar una imagen a un vinculo para que al hacer click, nos direcciones al valor del "target". Por ejemplo:
+● <a target=“http://www.google.com”><img src=“imagenes/logo-google.com”></a>
+
+- para ingresar una imagen en CSS, utilizamos la propiedad "background-image: url(y colocamos la ruta donde se encuentra descargada nuestra imagen)". Si la imagen es muy chica, la imagen puede repetirse, y para evitar o no eso, se utiliza "background-repeat".
+
+- Para colocar un borde ya sea a una imagen o a un texto, se utiliza la propiedad "border". Se puede colocar en pixeles para medir el grosor y a su vez colocarle un color. 
+
+- en css los selectores grupales se colocan. EJ: h1, h2{propiedad: valor}
+- selector descendente: si hay dos selectores iguales, y queremos elegir uno si y el otro no, debemos hacer. EJ: h1 strong {propiedad: valor}
+- font-size: coloca el tamaño de la fuente. "em"= 1em= al equivalente al de el valor base (que el valor base vendria a ser el de 16px). 2em= valor base *2
+- font-family: es el tipo de fuente que se coloca en el texto
+- los vinculos pueden tener colores asignados que pueden cambiar cuando pasamos el mouse por encima. Estas son Pseudo-clases. por ej: 
+● a:hover -cuando pasamos el mouse por arriba
+del vínculo.
+● a:link - cuando aún no hemos visitado al vínculo.
+● a:visited - cuando hemos visitado al vínculo.
+● a:active - cuando le hacemos clic al vínculo.
+Para poder trabajar de manera más compleja, se deberá
+hacer de la siguiente forma, donde también quitaremos
+con la propiedad de decoración de contenido el
+subrayado que los vínculos tienen por defecto.
+También en este caso, al pasarle el mouse por arriba,
+deseamos que este subrayado regrese, por lo tanto lo
+efectuamos desde nuestro editor de la siguiente forma:
+a {color:white; text-decoration: none};
+a:hover {text-decoration: underline};
+
+-Para alinear contenido o texto, se debe utilizar la funcion "text-align". Esta puede ser:
+● text-align: center
+● text-align: left
+● text-align: right
+● text-align: justify (esta funcion lo que hace es obligar a que todas las lineas de texto tengan el mismo ancho)
+
+- Para transformar el texto, utilizamos la funcion de "text-transform". Que nos permite transformar el texto por ejemplo, en mayusculas o minusculas:
+● text-transform: uperrcase (mayusculas)
+● text-transform: lowercase (minusculas)
+● text-transform: capitalize (solo la primera letra de cada palabra en Mayuscula)
+● text-transform: none (ninguno)
+
+- Para subrayar (o no) un elemento, debemos utilzar la propiedad "text-decoration":
+● text-decoration: underline (linea por debajo del texto)
+● text-decoration: none (ninguna linea)
+● text-decoration: overline (linea por encima del texto)
+● text-decoration: line-through (linea que atraviesa el texto)
+
+- Para indicar el ancho de los elementos de un documento, debemos utilizar la propiedad "width". Es aplicable para los elementos de bloque o linea bloque(como las imagenes, videos, etc). Los valores para trabajar las medidas de longitud son: vh, vw, %, px, etc.
+- Para indicar el alto de los elementos de un documento, debemos utilizar la propiedad "height". Es aplicable para los elementos de bloque o linea bloque(como las imagenes, videos, etc). Los valores para trabajar las medidas de longitud son: vh, vw, %, px, etc. Si no indico un valor, este va a ser "auto" Lo que significa que fluye con el contenido del elemento que tenga aplicada esta propiedad.
+- Para generar un margen en el documento, se debe utilizar la propiedad de "margin". Su valor puede ser medidad de longiut o bien un porcentaje en base al ancho o alto del elemento contenedor. Se puede colocar el valor en partes iguales, o bien separarse de la siguiente manera
+● margin-top: margen de arriba
+● margin-left: margen de la izquierda
+● margin-right: margen de la derecha
+● margin-bottom: margen de abajo    
+el margin solo funciona de la siguiente manera: margin:(top, right, bottom, left)
+a veces se puede centrar de manera automatica, utilizando: "margin: auto"
+
+- Para indicar el espacio entre los bordes de un elemento y su contenido, se debe utilizar "padding". Tambien se puede hacer como el margin, utilizando un solo valor para las cuatro partes o:
+● padding-top: espacio de arriba
+● padding-left: espacio de la izquierda
+● padding-right: espacio de la derecha
+● padding-bottom: espacio de abajo
+
+- Para permitir o no que el padding se sume al ancho o alto del total de un elemento, se debe utilizar la propiedad "box-sizing: border-box"
+- Para aplicar una propiedad a todos los elementos, utilizamos el selector "*", tambien llamado "selector universal" y este afecta a todos los elementos del documento.
+- Para colocar en negrita a un texto, debemos utiliza "font-weight: bold", o "font-weight: bolder" para que sea mas negrita aun.
+- Para colocar cursiva o italica, debemos utilizar la funcion "font-style: italic".
+
+- Para indica un borde, debemos utilizar la propiedad "border" y para darle un estilo debemos utilizar "border-style"
+Los diferentes tipos de borde son los siguientes:
+● Solid (un borde comun)
+● Dotted (un borde con puntos)
+● Dashed (un borde en vez de puntos, con lineas)
+● Double (doble borde)
+● Inset (un borde para adentro)
+● Outsed (un borde para afuera)
+● Groove (un borde con apariencia tallada)
+● Ridge (un borde con apariencia extruida)
+Tambien se puede colocar un borde de un solo lado. Ya sea top, bottom, left o right.
+Si queremos que todos los bordes sean de la misma manera, escribimos solo "border"
+Tambien se puede abrebiar en "border", el grosor, el estilo y el color. por ej: "border: 2px solid green"
+
+- Para modificar el valor del <li> en una lista ordenada podemos modificarla. Ya sea con letras en minuscula, mayuscula, numeros romanos
+● list-style-type: lower-alpha (letra minuscula)
+● list-style-type: upper-alpha (letra mayuscula)
+● list-style-type: lower-roman (letra romana minuscula)
+● list-style-type: upper-roman (letra romana mayuscula)
+● list-style-type: decimal-leading-zero (arranca con numero tambien, pero en decimal)
+
+- Para la lista desordenada tambien se puede hacer, y los valores son los siguientes:
+● list-style-type: none (sin estilo)
+● list-style-type: disc (ciruclo relleno)
+● list-style-type: square (cuadrado relleno)
+● list-style-type: circle (circulo vacio)
+
+- La propiedad vertical-align puede usarse para alterar la ubicación vertical de un elemento en línea, en relación a su elemento padre o a la línea del elemento. (Un elemento en línea es uno que no tiene salto de línea ni antes ni después de él; por ejemplo, EM, A y IMG en HTML.).
+El valor también puede ser una palabra clave. Las siguientes palabras clave afectan la ubicación en relación al elemento padre:
+
+● baseline (alinea líneas bases del elemento y el padre )
+● middle (alinea el punto medio vertical del elemento con la línea base más la mitad de x-height--la altura de la letra "x"--del padre)
+● sub (subíndice)
+● super (superíndice)
+● text-top (alinea las partes superiores del elemento y la fuente del elemento padre)
+● text-bottom (alinea las partes inferiores del elemento y la fuente del elemento padre)
+
+- Para poder trabajar con formularios, debemos trabajar con el elemento "form" dentro del "body".
+action en la accion que va a realizar el formulario. muchas veces vamos a trabajar con un codigo PHP. Ej: "<form action="codigo.php">
+por otro lado muy importante es el metodo o "method="" ". estos pueden ser dos mas importantes:
+● GET ideal para busquedas y queda guardada. Tiene limites de caracteres
+● POST valor para trabajar con formularios de contacto o de login.
+Completo seria de la siguiente manera en modo de ejemplo <form action="codigo.php" method="POST">
+
+- Para poder genera un campo de texto dentro de nuestro formulario debemos utilizar el siguiente elemento "input type="" " y depende valor del type. ej: <input type ="text">
+el atributo "placerholder" le da una ayuda al usuario sobre que tipo de informacion debe utilizar. Ej: "placeholder= "Nombre Apellido""
+Para que el campo input sea de campo "email". Debemos colocar de la siguiente manera "<input type= "email">"
+En otro caso si queremos que el campo sea una contraseña, debemos utilizar "<input type ="password">"
+"pattern="" " nos permite fijar un patron. Si nosotros requerimos que el usuario trabaje con un patron determinado, nosotros podemos aplicarlo. Se pueden buscar desde la pagina: http://www.html5pattern.com 
+por ejemplo cuando nos piden una mayuscula, una minuscula, un numero y un caracter.
+
+Para poder trabajar con un gampo de numero, debemos trabajar con el siguiente elemento "<input type="number">" se puede colocar tambien un minimo, un maximo y fijar un limite. por ejemplo
+● <input type="number" min="18" max= "90" step="2">
+el "step="2" " lo que realiza es que me permite escribir pero solo numero pares. Pero no se suele utilizar tanto
+
+Para genera un campo de radio (o de circulo para seleccionar) debemos utilizar el siguiente campo "<input type="radio">"
+Si queremos que sean varias opciones, debemos hacer varios elementos "radio".
+por ejemplo: Si queremos una casilla de casado o de soltero, debemos hacer el campo de la siguiente manera:
+● <input type="radio" value(o sea el valor que se le va a dar, en este caso casado)= "casado" name(se le asigan el mismo para los dos asi podemos seleccionar uno solo, y no se seleccionan los dos)="estado">
+● <input type="radio" value="Soltero" name="estado">
+
+Para hacer otro tipo de campo como el radio, es el "checkbox" o casilla de verificacion. Ej: <input type="checkbox">
+Asi como el radio, colocaremos un "name" y un "value" que es individual de cada uno. La diferencia con Radio, es que Checkbox puede seleccionar varias opciones al mismo tiempo
+
+- Para hacer un menu desplegable se debe realizar de la siguiente manera
+●   <select>
+        <option value "argentina"> Argentina </option>
+        <option value "uruguay"> Uruguay </option>
+        <option value "paraguay"> Paraguay </option>
+    </select>
+Si queremos que una opcion este seleccionada, debemos colocar al lado de option el siguiente valor: "option selected"
+Si queremos que el menu desplegable, se encuentre en principio vacio para luego poder seleccionar una opcion, debemos hacer lo siguiente:
+●   <select>
+        <option value="" selected>Elegir</option> (entonces este valor sera elegir, y aparte sera el primero que aparecera selccionado hasta que el usuario seleccione otro)
+        <option value "argentina"> Argentina </option>
+        <option value "uruguay"> Uruguay </option>
+        <option value "paraguay"> Paraguay </option>
+    </select>
+
+- Muchas veces se necesita que un menu desplegable nos permita seleccionar varias o multiples opciones, para ello, debemos utilizar de la siguiente manera:
+●   <select name="autos" multiple(para tener seleccion multiple)>
+        <option value "fiat"> Fiat </option>
+        <option value "renault"> Renault </option>
+        <option value "jeep"> Jeep </option>
+    </select>
+
+-Para utilizar un campo de adjuntar archivos, debemos utilizar el siguiente elemento: "input type="file" " si queremos que sean mutiples archivos, debemos utiliar el atributo "multiple". Ej: "<input type="file" multiple>"
+
+en los formularios siempre tiene que haber un cambio de comentarios, que permite que haga textos que son largos. Para haceros trabajamos con un atributo llamado "textarea cols=""(ancho solo numero sin colocar px o pt o nada. Ya le da la caracteristica de px) rows=""(alto)" tambien se puede omitir el cols y rows, borrarlos y darle un width y un height en CSS.
+
+- Elemento "label", no es obligatorio pero se recomienda su uso. Es un elemento indicador. por ejemplo:
+●   <label>
+    Nombre y Apellido: <input type="text" placeholder="nombre apellido">
+    </label> (en este caso anidamos el hijo "input" al padre "label")
+● pero en el caso de no anidarlos, lo utilizamos de la siguiente manera:
+    <label for(se anida de manera externa)=""ciclismo>ciclismo</label>
+    <input type="radio" id="ciclismo"(colocando el mismo nombre del for al id, anidamos el elemento "hijo")>
+
+- si o si necesitamos un elemento button para que lo que tengamos en nuestro formulario, pueda ser enviado:
+exiten dos manera:
+● <button>Enviar</button>
+● <input type="button" value="Enviar">
+
+- El atributo "required" lo que hace es que, el usuario al querer enviar el formulario y tener un campo vacio o sin completar, le marque un error y no pueda enviarlo. Ej:
+    <input required type="text" name="nombre">
+
+- una caracteristica de los elementos de formulario, es que son elementos de linea-bloque.
+por ejemplos si dos elementos input trabajn en conjunto, notamos que ambos se posicionan uno al lado del otro, caracteristica tipica de elementos en linea. Si se modifica utilizando widht y height, se modificarian y termianria siendo un elemento de bloque.
+Ahora en el caso de cambiar un label (que es un elemento de linea y no de bloque) en nuestro css, debemos colocar:
+label{
+    display:block;
+}
+(pasando el elemtno label, de linea a bloque)
+esto tambien se pueden cambiar, si un elemento es de bloque a linea.
+
+El elemento <span> no significa nada por si solo, pero al momento de un formulario se puede utilizar para colocar el famoso * que piden los formularios indicando que es requerido. Obvio que no cumple funcion si en el input no colocamos el elemento Required.
+
+El display, siempre se pone al padre. Por ejemplo display:flex;
+
+- Para hacer un sombreado de fondo a un cuadro o una imagen, debemos utilizar la propiedad "filter: drop-shadow(1px 1px 1px color)". El primer px es para darle direccion hacia la derecha o hacia la izquierda. El segundo px es para hacer que vaya para arriba o para abajo. El tercer pixel es para expandir o achicar el radio de sombreado. Y por ultimo el color
+
+(Befunky.com es una pagina para editar fotos)
+(online-convert.com pagina para convertir imagenes a otros tipos de archivos. Lo ideal es convertir las imagenes a formato .webp)
+
+PHP es un lenguaje de programacion mas utilizado, e sun codigo abierto, y se puede añadir a nuestro HTML. Es un lenguaje de servidor que nos permite enviar y recibir informacion del servidor
+
+Existen dos tipos de selectores en CSS:
+●  selectores grupales: ej: h1, h2, a, p{} al momento de afectar a varios elementos al mismo tiempo
+●  selectores descendentes: p a{} al momento de trabajar con selectores que se encuentran dentro de otros
+●  pseudoclases: a:hover (background-color: red)  Esto nos permitió afectar a los vínculos para que, al pasar el mouse por arriba de ellos, se activen ciertas conductas como cambios de color o fondos
+●  selectores específicos no genéricos, como lo es el selector "id": El id permite trabajar con un selector que afecta sólo a un elemento en el HTML.El ejemplo puntual sería que un elemento necesita ciertas propiedades, por lo tanto debo implementar esa regla de estilo de forma única. El selector id se escribe en CSS con el # y un nombre. Este nombre debe seguir ciertas reglas.
+●  Por otro lado se encuentra el selector "class": Habiendo conocido al id es fácil entender el uso de class. Su utilización surge del siguiente interrogante: ¿Qué selector utilizo si no quiero afectar a todos los elementos ni tampoco a uno sólo, sino a varios? Para afectar a varios elementos -ni todos ni uno solo- utilizaré la clase. Las clases poseen las mismas reglas de nomenclatura que los ids, con la diferencia de que comienzan con un “.” (punto).
+
+- Flex es hoy la forma mas utilizada para encolumnar elementos. Flex es un valor de la propiedad "display"
+- La alineacion horizontal se trabaja mediante la propiedad "justify-content".
+● "Flex-start" es el valor por defecto.
+● "Center" los elementos se centran en el contenedor sin espacios entre si
+● "Flex-end" permite ubicar los elementos orientados hacia el final del contenedor. 
+● "Space-around" genera espacio antes y después de los elementos.
+●  "Space-between" genera espacio entre los elementos.
+● "Space-evenly" genera espacio antes y después de los elementos, pero siempre igual, por lo tanto, no hay espacios mayores a otros
+
+- La alineación vertical se trabajará con la propiedad "align-items" con los siguientes valores:
+● "Stretch" valor por defecto o predeterminado, es decir, sin indicar nada este será el valor.
+● "Flex-start" los elementos se ubican en la parte superior del contenedor sin importar su height o alto
+● "Flex-end" los elementos se ubican en la parte inferior del contenedor sin importar su height o alto
+● "Center" permite ubicar los elementos hacia el centro del contenedor. 
+
+en el caso que quisieramos un solo elemento tenga una posicion distinta, debemos utilizar "align-self" en el elemento que queramos que tenga otra posicion
+
+- La función del "iframe" es cargar información que no se encuentra dentro de ese HTML sino en otro lugar, sin embargo, pasa a mostrarla dentro del primero: ej: <iframe src= “http://www.educacionit.com.ar”></iframe>
+
+- En HTML5 aparecen los elementos audio y video. Su incorporación tiene como premisa que, al momento de utilizarlo, debemos también subir el video o el audio en cuestión a nuestro servidor o hacer referencia a un recurso subido en otra página:
+● para subir un video: <video controls src="y la ruta del archivo de video"></videos>
+● con el audio es igual. <audio control src="y la ruta del audio"></audio>
+el control src nos permite pausar, adelantar, o atrasar el audio o el video
+
+- El elemento Tabla se escribe de la siguiente manera: "<table>" que  es donde inicia una tabla. Por cada elemento <tr> que encontremos, tendremos una fila. Si vemos un <td> es una celda e indica la cantidad de columnas. Si vemos un <th>, en lugar de un <td>, entonces esta sera una celda de encabezado. Una celda de encabezado a diferencia de una celda comun, pone el contenido alineado al centro y en negrita.
+También podemos unir celdas o filas a través de dos atributos:
+● En el caso de unir celdas de diferentes filas, usaremos "rowspan".
+● Para unir celdas de diferentes columnas, utilizaremos "colspan".

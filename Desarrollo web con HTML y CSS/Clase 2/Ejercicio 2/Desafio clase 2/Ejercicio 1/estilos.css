@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: poppins;
+    color:#0a2ff1;
+}
+body{
+    margin: auto;
+    width: 60%;
+}
+h1{
+    font-weight: bold;
+    font-size: 78.6px;
+}
+h1 strong{
+    background-color: #3ffff3;
+}
+p{
+    font-size: 30.6px;
+    font-weight: 400;
+}
+img.fondo{
+    width: 515px;
+    height: 760px;
+}
+img.celu{
+    width: 515px;
+    position: absolute;
+}

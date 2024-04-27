@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Poppins:ital,wght@0,400;0,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Poppins:ital,wght@0,400;0,700&family=Roboto:ital,wght@0,400;0,700&display=swap');
+
+body{
+    font-family: roboto;
+    box-sizing: border-box;
+}
+
+header div.barra-nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+nav{
+    display: block;
+}
+nav ul li{
+    margin-left: 40px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+   
+    
+}

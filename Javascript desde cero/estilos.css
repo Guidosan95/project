@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Spotify';
+    src: url(/Circular/CircularStd-Black.otf);
+
+}
+@font-face {
+    font-family: 'spotlight';
+    src: url(/Circular/CircularStd-Light.otf);
+}
+@font-face {
+    font-family: 'spotmedium';
+    src: url(/Circular/CircularStd-Medium.otf);
+}
+@font-face {
+    font-family: 'spotbold';
+    src: url(/Circular/CircularStd-Bold.otf);
+}
+*{
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    font-family: spotify;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    height: 70px;
+    
+}
+
+nav img{
+    width: 135px;
+    height: auto;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin: 30px 0 0 0 ;
+    
+}
+nav ul li{
+    padding-left: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+/*HEADER*/
+header{
+    display: flex;
+    justify-content: center;
+    margin: 65px 0 0 0 ;
+    
+    
+}
+header div#header{
+    width: 30%;
+    padding: 0px 20px 65px 10px;
+    
+}
+header div#header{
+    border-radius: 15px;
+}
+header div#header, section, p, h1, h4, strong, a {
+    background-color: #232323;
+}
+div#button{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 10%;
+    
+}
+
+section.button_fir{
+    display: flex;
+    flex-direction: column;
+    align-items: center;justify-content: center;
+    height: 100%;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+section.button_sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: black;
+    margin: 0px;
+    
+}
+div#button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: none;
+    padding-top: 0;
+    font-size: 13px;
+}
+div#button a h4{
+    font-family: spotify;
+}
+div#button a:hover{
+    filter: opacity(75%);
+    color: #1a1a1a;
+}
+h1{
+    color: #ffc862;
+}
+header p{
+    font-size: 14px;
+    font-family: spotlight;
+    font-weight: 700;
+}
+header h4 strong{
+    font-family: spotbold;
+    
+}
+header h4{
+    font-family: spotlight;
+    font-weight: 100;
+}
+main{
+    width: 100%;
+    
+    
+}
+main div#main{
+    width: 42%;
+    
+    
+}
+main div#main section{
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    
+    
+}
+main div#main section h3{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+main, div#main, section{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    
+}
+
+main div#main, section{
+    flex-direction:column ;
+    height: 100%;
+    
+    
+}
+main div#main section h3, button, span{
+    background-color: #232323;
+
+}
+main div#main section button{
+    text-align: left;
+    border: none;
+    text-decoration: none;
+    font-family: spotlight;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+button a {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px;
+    text-decoration: none;
+    
+    
+}
+
+button a:hover {
+    filter: opacity(100%);
+    width: 100%;
+    padding: 9px;
+    border-radius: 5px;
+    border: 3px solid white;
+    color: white;
+        
+}
+
+span{
+    font-family: spotlight;
+    font-weight: 900;
+    
+}

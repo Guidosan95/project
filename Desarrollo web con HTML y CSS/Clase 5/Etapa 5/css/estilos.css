@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: auto;
+    font-family: roboto;
+    background-color: #F2F2F2;
+}
+body nav p{
+    font-family: coiny;
+    font-size: 20px;
+    margin-top: 10px;
+    
+}
+/* Navbar*/
+nav{
+    display: flex;
+    justify-content:space-between;
+    
+    
+}
+ul{
+    display: flex;
+    
+}
+nav li{
+    list-style: none;
+    padding-right: 40px;
+    position: relative;
+    
+}
+li a{
+    
+    text-decoration: none;
+    color: black;
+}
+.submenu{
+    display: none;
+    margin: 0;
+}
+li:hover .submenu{
+    display: block;
+    position: absolute;
+    width: 10px;
+}
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-top:50px ;
+    width: 100%;
+    padding-bottom: 50px;
+}
+h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 51px;
+}
+h1 strong{
+    font-family: coiny;
+}
+h4{
+    background-color: yellow;
+    width: 83%;
+}
+section#prin img{
+    margin: 0;
+    width: 550px;
+
+}
+section#pri{
+    width: 40%;
+}
+
+/*Main y Div general*/
+main#config{
+    margin: 0;
+    width: 100%;
+}
+div#config{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-top:50px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+/*1er Div*/
+main div p{
+    width: 80%;
+}
+main h3{
+    background-color: yellow;
+}
+
+main h3.first{
+    width:45% ;
+}
+main h3.second{
+    width: 63%;
+}
+/*2do Div*/
+section#main-config{
+    margin-left: 0px;
+    width: 100%;
+}
+img.prod{
+    width: 370px;
+}
+
+section.lista{
+    padding-left:16%;
+}
+section.lista ul{
+    display: block;
+    list-style: decimal;
+    width: 83%;
+}
+section.lista ul li{
+    padding-bottom: 20px;
+    
+}
+section.lista ul li#siete{
+    background-color: yellow;
+    font-weight: bold;
+    width: 48%;
+    padding-bottom:0px;
+}
+
+/*3er Div*/
+section#contact{
+    width: 50%;
+}
+h2#contacto{
+    background-color: black;
+    color: white;
+    width: 45%;
+    font-size: 30px;
+    
+    
+}
+h2#contact{
+    background-color: black;
+    color: white;
+    width: 58%;
+    font-size: 30px;
+    
+    
+}
+p#contact{
+    background-color: yellow;
+    width: 40%;
+    font-size: 20px;
+}
+
+section.form{
+    width: 46%;
+    
+}
+form label{
+    padding-bottom: 30px;
+}
+label{
+    font-weight: bold;
+    
+}
+label strong{
+    color:red;
+}
+input, textarea{
+    display: flex;
+    width: 100%;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+div#button{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    background-color: black;
+    color: white;
+    padding-left:30px ;
+    padding-right:30px ;
+    padding-top:10px ;
+    padding-bottom:10px ;
+   
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+/*Aside*/
+
+aside{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+aside p{
+    width: 20%;
+}
+aside a{
+    width: 7%;
+}
+aside a img{
+    width: 100%;
+}
+aside a:hover{
+    -webkit-animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+}
+
+/*Footer*/
+
+footer{
+    background-color: yellow;
+    display: flex;
+    
+    
+}
+footer h4{
+    font-family: coiny;
+    width: 22%;
+    margin-top: 21.8px;
+}
+footer p{
+    margin-top: 21.8px;
+}
+footer p a{
+    color: black;
+}
+footer p a:hover{
+    color:black
+}

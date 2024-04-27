@@ -1,0 +1,241 @@
+● .click(): facilita la ejecución de una función cuando se hace clic sobre un objeto.
+
+● .setTimeout(): facilita la ejecución de una función.
+
+● AJAX: tecnología desarrollada en JavaScript para interactuar con un servidor. Permite mejorar la velocidad y usabilidad, al hacer que se cargue solo lo necesario de cada página.
+
+● Alert(): anuncio de alerta mediante mensaje.
+
+● Array: tipo especial de variable que puede contener más de un valor al mismo tiempo. No es necesario que los valores sean todos del mismo tipo. Los elementos en un array se numeran con índices, que comienzan desde 0.
+
+● Árbol DOM: plantilla de estructura de una página web.
+
+● Booleano: tipo de variable que está conformada por dos únicos valores posibles: true/false.
+
+● Consola: herramienta disponible en todos los navegadores que sirve para la depuración del código.
+
+● Depuración del código (debug): mantenimiento y corrección de un código fuente.
+
+● DOM (Document Object Model): API de programación para documentos HTML. Proporciona un conjunto de objetos que permiten que JavaScript interactúe con elementos HTML y los manipule.
+
+● Evento: acción que permite la interactividad y que sucede en una página web. Puede ser un clic que realiza el usuario, presión en una tecla, y otras.
+
+● Framework: colección de herramientas y librerías que simplifican el desarrollo de aplicaciones en JavaScript.
+
+● Función: es un bloque de código reutilizable que realiza una tarea específica cuando se lo llama. Se define con la palabra reservada function.
+
+● Id: significa la mención que identifica un elemento del árbol DOM.
+
+● if-else: una estructura de control que sirve para tomar decisiones. Permite ejecutar cierto código si se cumple una condición.
+
+● Img: insertar imágenes en la web.
+
+● JavaScript (JS): es un lenguaje de programación de alto nivel que se utiliza en el desarrollo web para generar interactividad en las páginas web como: validación de formularios, interactuar con el Document Object Model (DOM), generar sliders y otras funcionalidades. También sirve para realizar aplicaciones móviles, juegos, IoT (Internet de las cosas), aplicaciones de Backend y APIs, entre otros usos. para generar interactividad en las páginas web.
+
+● JQuery: es una librería multiplataforma de JavaScript que sirve para actualizar un sitio web y crear plugins, eventos, animaciones y apps.
+
+● Manejador de eventos: función asignada a un evento y, generalmente, asociada a un elemento HTML.
+
+● Método: es una función que está asociada a un objeto y se almacena como una de sus propiedades. Permiten que el objeto realice acciones o cálculos.
+
+● New: permite crear nueva solicitud de un objeto mediante un constructor.
+
+● nombreObjeto: permite ver las propiedades del objeto en la consola.
+
+● nombreObjeto.otraPropiedad = function() {}: facilita la asignación de función al objeto
+
+● nombreObjeto.propiedad: permite mostrar el valor de la propiedad del objeto.
+
+● nombreObjeto.propiedad = valor : facilita la asignación de valor a la propiedad.
+
+● Objeto: en JavaScript, un objeto es una entidad que almacena valores relacionados. Sirven para modelar y representar elementos y su comportamiento en el código. Pueden contener propiedades y métodos. Los métodos permiten que el objeto realice acciones u operaciones matemáticas.
+
+● Palabras reservadas: son las que se utilizan para elaborar las sentencias de JavaScript de manera exclusiva. Las palabras son: Break, Case, Catch, Continue, Default, Delete, Do, Else, Finally, For, Function, If, In, Instanceof, New, Return, Switch, This, Throw, Try, Typeof, Var, Void, While, With.
+
+● Return: facilita la obtención de un valor al salir de un contexto.
+
+● Script: también conocido como “guión”, trata de los programas, aplicaciones o códigos realizados con el lenguaje de programación JavaScript.
+
+● Sentencia: son las instrucciones de un script.
+
+● Src: señal de ubicación de Script o imagen dentro del navegador.
+
+● This: para señalar el objeto en el que se está trabajando.
+
+● Var: palabra usada para definir una variable.
+
+● Variables: se utilizan en los lenguajes de programación para almacenar valores.
+
+● Implementar JS de manera externa:
+Para crear un archivo JavaScript, antes de comenzar a escribir la lógica de las aplicaciones, se debe contar con un documento HTML. Los archivos JS se referencian dentro del encabezado <head> de los documentos HTML. El atributo defer, que acompaña al archivo JS, solo es necesario incluirlo cuando interactuemos desde JS con elementos HTML. Siempre conviene crear subcarpetas dedicadas, para mantener ordenado los diferentes tipos de archivos que conforman a un proyecto. Para introducirlo en HTML, se debe utilizar el siguiente codigo
+<script defender src="y la ruta donde se encuentra"></script>
+
+● JavaScript "console" es un objeto, nativo de este lenguaje, que cuenta con una serie de metodos incorporados que permite scar provecho al momento de analizar elcodigo o comportamientode estas aplicaciones. La mayoria de sus metdos arrojan resultados en la pestaña Console de las herramientas para el desarrollador (DevTools). 
+Existen estos cuatro metodos de "console":
+● console.log(): Permite visualizar un mensaje definido en la consola de JS. Este texto puede provenir de un texto definido manualmente por nostros, o desde el valor contenido en una variable o constante
+● console.warn(): Visualiza tambien un mensaje en la Consola de JS con un énfasis de color refiriendo a un tipo de mensaje de advertencia. A su vez, incorpora el icono de alerta, para que le prestemos atencion a mismo al identificarlo en la consola de JS
+● console.error(): Visualiza tambien un mensaje en la Consola de JS con un énfasis de color refiriendo a un tipo de mensaje de error
+● console.table(): Es de gran utilidad para representar en pantalla datos tabulares, por ejemplo, cuando se trabaja con arrays de elementos, arrays de objetos, u objetos literales, que contienen multiples datos, son mejor representados por este metodo que por console.log()
+ 
+ // VARIABLES 
+
+Una variable es un elemento que permite almacenar o guardar información para ser utilizada nuevamente. Cuando se incorporan variables en una aplicación web, y esta se ejecuta, reserva un espacio en la memoria de la computadora o dispositivo, donde deja disponible la variable con el valor que se le haya asignado.
+Declaración de las variables. Las variables se declaran anteponiendo la palabra reservada "let", seguido del nombre “identificativo” que le daremos a la variable. Este nombre debe identificar su valor almacenado. Para asignar un valor, en el mismo momento en que la declaramos, se agrega el operador de asignación igual "=" y luego el valor deseado.
+Por ejemplo: 
+            let nombreCompleto
+            let empresa= "EducacionIT"
+
+En JavaScript, se pueden declarar variables con las palabras clave var y let, según el alcance que se desea definir para esa variable. A partir de la versión ES6 (año 2015), se insiste en priorizar el uso de let para declarar variables, ya que ofrece un alcance de bloque más claro y menos propenso a errores. Si tu propósito futuro es trabajar en el universo del desarrollo web frontend o backend con el lenguaje JavaScript, enfócate en declarar las variables, siempre, mediante let. Si declaramos una variable con un valor inicial, y luego se necesita cambiar el valor por otro, simplemente se debe definir el nombre de la variable seguida del signo = y el nuevo valor que deseamos almacenar en ella. Con esto, la variable cambió su valor inicial, y se podrá utilizar su nuevo valor, en cualquier parte del programa donde se requiera.
+
+Reglas para nombrar una variable en JavaScript:
+● Los nombres de variables pueden contener letras, números, _ (underscore) y signo de dólar ($).
+● No pueden comenzar con un número.
+● Deben comenzar en minúsculas.
+● Los nombres son case sensitive (no es lo mismo A que a)
+
+En JavaScript se estila declarar cada variable o constante utilizando una palabra, en minúsculas, que describa el tipo de datos que almacena. Es posible usar dos o más palabras, en aquellos casos donde una sola no alcance para describir el valor que se almacenará. Cuando se combinen palabras usando el formato camelCase se debe contemplar que, cada palabra adicional tenga su primera inicial en mayúsculas.
+
+//CONSTANTES
+
+Las constantes, son una especie de variable que también ocupan un espacio en memoria, y permiten almacenar un valor específico para ser utilizado dentro de nuestra aplicación web. Se declaran al anteponer la palabra reservada const. A diferencia de una variable declarada con let, las constantes no permiten cambiar el valor que se le haya asignado. Tal como su nombre lo indica, el valor inicial que le asignemos será “un valor constante”, durante todo el ciclo de vida de nuestra aplicación. Si intentamos cambiar su valor predefinido, la constante arrojará un error y no realizará el cambio forzado.
+Por ejemplo:
+const usuarioID= "Pepitoperez"
+const empresa= "EducacionIT"
+const metodoDePago= "Tarjeta de debito"
+
+¿Cuándo utilizarlas?
+Las constantes se deben utilizar en escenarios donde sea necesario guardar un valor y este no deba cambiar.
+
+Tipos de datos: 
+Se define como tipado de datos, a la forma de poder crear variables que respeten una estructura específica de la información que guarden. JavaScript posee lo que se denomina un tipado débil de datos, por lo tanto no es necesario definir qué tipo de datos posee una variable y podrá cambiar durante el ciclo de vida de la aplicación web.
+
+● string :Almacena datos del tipo cadena de caracteres. Puede ser una cadena alfabética o alfanumérica, incluyendo caracteres extendidos.
+● number: Almacena un dato numérico. El mismo puede ser entero o de punto flotante (poseer decimales). Para este último punto, JavaScript maneja los decimales utilizando el punto (.) como separador decimal.
+● boolean: Un tipo de dato estándar para definir valores verdaderos (TRUE), o valores falsos (FALSE).
+● object: Un tipo de dato propio de los objetos en JS. Se utiliza tanto para los objetos literales como también para objetos del sistema, instanciados a partir de una clase, y también para un array de objetos.
+● array: Un tipo de dato propio de los array o colecciones de elementos o de objetos. En JS es muy utilizado y es la base fundamental de conceptos avanzados en este lenguaje de programación.
+● NaN: La propiedad global NaN es un valor que representa Not-A-Number. Por ejemplo, si declaramos una variable sin valor, y la multiplicamos por un número, su resultado será NaN.
+● undefined: La propiedad global undefined representa el valor primitivo undefined. Una variable a la que no se le ha asignado valor es de tipo undefined
+
+string 
+Las variables del tipo string:
+● Permiten almacenar valores también denominados como cadenas de texto.
+● Pueden ser alfanuméricas, y contener cualquier tipo de dato.
+● Al declararlas, se debe encerrar el valor asignado entre comillas (simples '' o comillas dobles "").
+
+number 
+Las variables del tipo number:
+● Permiten almacenar valores numéricos. Estos pueden ser del tipo entero, o con decimales.
+● En la definición de un valor numérico con decimales, se debe utilizar el punto “.” como separador.
+● No se utiliza separador de miles, y se declaran valores sin encerrarlos entre comillas
+
+boolean
+Las variables del tipo boolean:
+● Permiten almacenar valores booleanos (TRUE o FALSE). Son los únicos dos valores posibles en un entorno booleano.
+● Estos valores representan un dato, cuando este es verdadero, o es falso
+
+array
+● Un array es un tipo de variable que permite almacenar múltiples valores en lugar de uno solo. Este tipo de dato facilita la agrupación de valores que tienen algo en común.
+● De esta forma, se pueden concentrar todos en un único lugar. Esto hará que sean mucho más fácil de acceder. Los arrays tienen un poder y un valor importante en la construcción cotidiana de aplicaciones JavaScript.
+ej: const frutas= ['Pera', 'Banana', 'Manzana', 'Naranja']
+
+NaN
+Las variables del tipo NaN:
+● Definen un valor que significa Not-A-Number. Esto ocurre, por ejemplo, cuando tenemos una variable declarada pero no inicializada (no se le asignó un valor), e intentamos multiplicarla por un valor numérico.
+
+// Propiedades y métodos en variables
+
+Cuando se crea una variable, esta recibe, de forma predeterminada, una serie de métodos. Estos métodos, permiten trabajar sobre el valor de la variable de acuerdo a la necesidad que debemos aplicar en el programa. Los métodos disponibles para una variable del tipo String, son propios de este tipo de dato. Existen muchísimos métodos. Ayudan a interactuar con los datos de la variable, de forma precisa; leen, convierten o transforman el valor almacenado según la necesidad.
+Por ejemplo: 
+            let nombre ='EducacionIT';
+            ● nombre.lenght //devuelve el total de caracteres
+            ● nombre.at(2) //devuelve el caracter en dicha posicion
+            ● nombre.trim() //elimina espacion agregados al inicio o final 
+            ● nombre.toUpperCase() //convierte el texto a mayusculas
+            ● nombre.toLowerCase() //convierte el texto a minusculas
+
+Los métodos para variables que almacenan valores del tipo number ayudan a trabajar mejor el formato de cada número, de acuerdo a la necesidad en el momento de almacenarlos, o de representarlos en pantalla
+por ejemplo: 
+            let numero = 2103; 
+            ● numero.toPrecision(6)
+            ● numero.toFixed(2)
+            ● numero.toLocaleString()
+            ● numero.toString() 
+
+//Visualizar variables en la consola JS
+
+La consola JS integrada en Developer Tools es una herramienta netamente pensada para depurar aplicaciones. Entre todas las funcionalidades que tiene, permite visualizar el valor de variables y constantes. Para ello, se utiliza el objeto console, integrado a JS, y su método .log(). Dentro de los paréntesis de este método, se referencia la variable y así se puede ver, en la consola JS, qué valor posee almacenado. Como se observa en el ejemplo, es posible visualizar, en la consola JS, el valor de una variable (1), el valor de una variable concatenado (+) con texto estático (2), o también el valor de una variable concatenada con texto estático utilizando una coma en lugar del signo más (3).
+por Ejemplo:
+
+            let usuarioLogueado = true
+            let empresa= "EducacionIT"
+            let nombre= "Pepito Perez"
+            let cargo= "CEO McMillian Utilities"
+            
+            console.log (usuarioLogueado)
+            console.log("Nombre: "+ nombre + ", Cargo: " + cargo)
+            console.log("Empresa: ", empresa)
+
+
+// Operadores: introducción
+En programación, los operadores son símbolos o palabras clave que se utilizan para realizar manipulaciones sobre valores y variables. Estas operaciones pueden incluir: aritmética, comparación, asignación, lógica, entre otras. Los operadores son fundamentales para construir expresiones y sentencias. Al combinar variables, constantes y valores literales con operadores, es posible: realizar cálculos, evaluar condiciones y realizar diversas acciones en un programa.
+
+Asignación, incremento y decremento
+● El operador de asignación se utiliza para guardar un valor en una variable. Ya lo hemos utilizado previamente. Veamos el ejemplo contiguo:
+        let iva= 1.21
+
+● El operador de incremento se indica mediante el prefijo ++. Incrementa la variable en una unidad, tal como se muestra en la segunda imagen.
+● El operador de decremento se indica mediante el prefijo --. Decrementa la variable en una unidad.
+        let numero= 12
+        ++numero
+        console.log('Valor de la variable numero', numero);
+
+Operadores matemáticos
+JavaScript permite realizar operaciones matemáticas:
+● suma (+),
+● resta (-),
+● multiplicación (*) y
+● división (/).
+Veamos algunos ejemplos en las diapositivas a continuación La definición de valores numéricos con decimales no utiliza separador de miles, y usa punto (.) como separador decimal, por ejemplo:
+        let haberes= 255340.87
+        let bonoTrimestral= 25400
+        let totalHaberMes= haberes + bonoTrimestral
+
+        console.log('Haberes a depositar', totalHaberMes)
+
+// Operadores JavaScript orientados a operaciones aritmeticas, u operadores para realizar operaciones aritmeticas basicas:
++ Sumar: en JS, el operador + permite sumar dos valores numéricos. También se utiliza para concatenar valores de variables que pueden ser del tipo string, o combinadas como ser un string y un number.
+- Restar: El operador - permite realizar una resta entre dos valores numéricos.
+* Multiplicar: El operador * permite realizar una multiplicación entre dos valores numéricos.
+/ Dividir: El operador / permite realizar una división entre dos valores numéricos.
+% Módulo, o Resto: el operador % permite realizar una división entre dos valores numéricos, pero retornará el módulo, o resto de la división.
+
+Los operadores matemáticos se pueden combinar con el operador de asignación para lograr un resultado más rápido y conciso: En la misma línea de código, se realiza una operación aritmética sobre el valor almacenado en la variable, y se actualiza. Este tipo de operadores matemáticos combinados, es equivalente al uso convencional de los operadores matemáticos y de asignación que vemos en el segundo ejemplo de código. Cualquiera de las dos opciones es totalmente válida y funcional en JavaScript.
+        let numero = 9 
+        numero +=4 operador de igualdad acumulativa
+        numero -= 1 operador de asignacion de resta
+        numero *= 1 operador de asignacion de multiplicacion
+        numero /= 3 operador de asignacion divisora
+        numero %= 4 operador de asignacion de modulo
+
+        let numero = 9
+            numero = numero + 4
+            numero = numero - 1
+            numero = numero * 1
+            numero = numero / 3
+            numero = numero % 4
+
+Operador + El operador + se utiliza también para concatenar valores del tipo String. Puede ser útil para concatenar dos tipos de datos String en un único valor, o para concatenar un tipo de dato String y un tipo de dato Number, indistintamente del orden en el que se defina. Para esto último, el resultado final siempre será un tipo de dato String, por sobre algún dato numérico
+        let numero= 9
+        let leyenda = 'El valor de la variable numero, es:'
+        let mensaje= leyenda + numero
+
+// Operadores de comparación 
+También llamados “operadores relacionales”, se emplean para comparar y establecer la relación entre ellos. Devuelven un valor booleano (true, verdadero, o false, falso) basado en la condición.
+
+=== Operador de comparación igual: permite comparar dos valores específicos, y retornar un valor booleano TRUE, si valorA es igual a valorB, o FALSE, si no lo es.
+> Operador de comparación mayor que: permite comparar dos valores específicos, y retornar un valor booleano TRUE, si valorA es mayor que valorB, o FALSE, si no lo es.
+>= Operador de comparación mayor o igual que:: permite comparar dos valores específicos, y retornar un valor booleano TRUE, si valorA es mayor, o igual, que valorB, o FALSE, si no lo es.
+< Operador de comparación menor que: permite comparar dos valores específicos, y retornar un valor booleano TRUE, si valorA es menor que valorB, o FALSE, si no lo es.
+<= Operador de comparación mayor que: permite comparar dos valores específicos, y retornar un valor booleano TRUE, si valorA es menor, o igual, que valorB, o FALSE, si no lo es.
+!== Operador de comparación distinto de: permite comparar dos valores específicos, y retornar un valor booleano TRUE, si valorA es distinto de valorB, o FALSE, si son iguales.

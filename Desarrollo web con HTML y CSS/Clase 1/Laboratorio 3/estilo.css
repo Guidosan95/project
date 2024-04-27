@@ -1,0 +1,13 @@
+body{
+    background-color: #f0f0f0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, p, li{
+    color: blue;
+    
+}
+h1{
+    text-decoration: overline;
+    color: darksalmon;
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Coiny&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: #edf7ff;
+    
+
+}
+header{
+    color: #0a2ff1
+    ;
+}
+header h1{
+    font-family: MuseoModerno;
+    font-size: 117.33px;
+}
+header h3{
+    font-size: 52px;
+    font-family: asap;
+}
+main section p{
+    font-size: 33.3px;
+    font-family: asap;
+    color: #04146c
+    ;
+}
+main section h3{
+    color:#0a2ff1;
+    font-family: museomoderno;
+    font-size: 48px;
+}
+main section ul{
+    color: #04146c;
+    font-family: asap;
+    font-size: 33.3px;
+}
+footer{
+    font-family: museomoderno;
+    font-size: 198px;
+    color: #8a9af1;
+}
