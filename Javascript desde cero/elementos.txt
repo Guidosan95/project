@@ -239,3 +239,5 @@ También llamados “operadores relacionales”, se emplean para comparar y esta
 < Operador de comparación menor que: permite comparar dos valores específicos, y retornar un valor booleano TRUE, si valorA es menor que valorB, o FALSE, si no lo es.
 <= Operador de comparación mayor que: permite comparar dos valores específicos, y retornar un valor booleano TRUE, si valorA es menor, o igual, que valorB, o FALSE, si no lo es.
 !== Operador de comparación distinto de: permite comparar dos valores específicos, y retornar un valor booleano TRUE, si valorA es distinto de valorB, o FALSE, si son iguales.
+
+algunos cambios que voy realizando
